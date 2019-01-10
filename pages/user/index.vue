@@ -24,6 +24,7 @@
                 <b-button size="sm" class="mr-0" variant="danger" @click.prevent="deletePost(row.item._id)">Delete</b-button>
               </template>
             </b-table>
+            <b-button id="create-btn" size="sm" variant="success" to="/create">Create</b-button>
           </vs-tab>
         </vs-tabs>
       </b-row>
@@ -38,6 +39,8 @@
   box-shadow 0 4px 15px 0 rgba(0,0,0,.08)
 #submit
   margin-top 0.5em
+#create-btn
+  margin-left 0.5em
 </style>
 
 <script>
